@@ -79,6 +79,15 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Common\main.cpp" />
+    <ClCompile Include="Escenes\Escene1.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Headers\Escena.h" />
+    <ClInclude Include="Headers\Escene1.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Debug\freeglut.dll" />
+    <None Include="README.md" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
