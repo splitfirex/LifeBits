@@ -21,19 +21,25 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Common\main.cpp">
+    <ClCompile Include="common\Bit.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Escenes\Escene1.cpp">
+    <ClCompile Include="common\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="escenes\Escene1.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Headers\Escene1.h">
+    <ClInclude Include="include\Bit.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Headers\Escena.h">
+    <ClInclude Include="include\Escena.h">
       <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Escene1.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

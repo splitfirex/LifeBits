@@ -78,12 +78,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Common\main.cpp" />
-    <ClCompile Include="Escenes\Escene1.cpp" />
+    <ClCompile Include="common\Bit.cpp" />
+    <ClCompile Include="common\main.cpp" />
+    <ClCompile Include="escenes\Escene1.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Headers\Escena.h" />
-    <ClInclude Include="Headers\Escene1.h" />
+    <ClInclude Include="include\Bit.h" />
+    <ClInclude Include="include\Escena.h" />
+    <ClInclude Include="include\Escene1.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Debug\freeglut.dll" />

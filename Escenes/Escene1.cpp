@@ -1,4 +1,4 @@
-#include "../Headers/Escene1.h"
+#include "../include/Escene1.h"
 #include <iostream>
 #include <GL\freeglut.h>
 

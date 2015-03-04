@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <iostream>
 #include <GL/freeglut.h>
-#include "../Headers/Escena.h"
-#include "../Headers/Escene1.h"
+#include "../include/Escena.h"
+#include "../include/Escene1.h"
 
 void Display();
 void reshape(int w, int h);
