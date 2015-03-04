@@ -14,6 +14,8 @@ Escene1::Escene1(void)
 	vol.yBot = -100; vol.yTop = 100;
 	vol.zNear =1 ; vol.zFar = 1000;
 
+	reVisualizar = true;
+
 	// Establecemos la ilumunacion
 	glEnable(GL_LIGHTING);
 	glEnable(GL_DEPTH_TEST);

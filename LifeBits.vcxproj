@@ -86,6 +86,7 @@
     <ClInclude Include="include\Bit.h" />
     <ClInclude Include="include\Escena.h" />
     <ClInclude Include="include\Escene1.h" />
+    <ClInclude Include="include\Formas.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Debug\freeglut.dll" />
