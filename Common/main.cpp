@@ -10,12 +10,16 @@ void initGL();
 void keyFunc(unsigned char key, int mX, int mY);
 void keySp(int key, int mX, int mY);
 
+double savedTime = 0;
+double updateTimer = 0;
+const double updateInterval = 1.0/60.0;
+
 Escena *actual;
 
 int main(int argc, char *argv[]){
 
 	glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGB | GLUT_DEPTH);
-	glutInitWindowSize(400,400);
+	glutInitWindowSize(600,600);
 	glutInit(&argc,argv);
 	glutCreateWindow("Hola mundo");
 	actual = new Escene1();
@@ -31,6 +35,7 @@ int main(int argc, char *argv[]){
 }
 
 void Display(){
+
 	actual->dibujar();
 	//glFlush();
 	glutSwapBuffers();
