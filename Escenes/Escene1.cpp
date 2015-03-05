@@ -57,7 +57,7 @@ void Escene1::dibujarBits(){
 	{
 
 		it->second->calcularMovimiento(malla);
-		if(it->second->hasObjetive ==  false){
+		if(it->second->hasObjetive ==  false || it->second->isLock()){
 			int x = rand() % 100;
 			int z = rand() % 100;
 			it->second->darObjetivo(x,0,z);
@@ -152,12 +152,6 @@ void axis(){
 }
 
 
-void timerCB(int millisec)
-{
-	glutTimerFunc(millisec, timerCB, millisec);
-	glutPostRedisplay();
-}
-
 void Escene1::dibujar(){
 	tiempo++;
 	//if(tiempo % 100 == 0){
@@ -203,9 +197,6 @@ void Escene1::dibujar(){
 	glPopMatrix();
 	*/
 	setVisual();
-	glutPostRedisplay();
-	
-	//}
 }
 
 void Escene1::reshape(int w, int h){

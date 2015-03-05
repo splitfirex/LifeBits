@@ -6,6 +6,7 @@ Bit::Bit(int iid)
 {
 	id = iid;
 	hasObjetive = false;
+	unLock = 0;
 }
 
 void Bit::darObjetivo(int ax, int ay, int az){
@@ -55,12 +56,18 @@ void Bit::calcularMovimiento(std::map<std::string,int> malla){
 	
 	if(malla[valpos]){
 		nextPos.x = pos.x; nextPos.y = pos.y;nextPos.z = pos.z;
+		unLock++;
 	}
 
 	if(nextPos.x == obj.x && nextPos.y == obj.y  && nextPos.z == obj.z){
 		hasObjetive =false;
+		unLock = 0;
 	}
 
+}
+
+bool Bit::isLock(){
+	return unLock > 3;
 }
 
 void Bit::dibujar(){

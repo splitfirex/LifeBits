@@ -19,6 +19,7 @@ public:
 	std::map<std::string,std::string> con;
 	int id;
 	bool hasObjetive;
+	int unLock;
 
 	void conversar(Bit *amigo);
 	void dibujar();
@@ -28,6 +29,7 @@ public:
 	void darObjetivo(int x, int y, int z);
 	void decidirObjetivo();
 	void darConocimiento(std::string clave, std::string valor);
+	bool isLock();
 	std::string getPos();
 
 	Bit(int id);

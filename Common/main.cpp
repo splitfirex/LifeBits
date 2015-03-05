@@ -9,6 +9,7 @@ void reshape(int w, int h);
 void initGL();
 void keyFunc(unsigned char key, int mX, int mY);
 void keySp(int key, int mX, int mY);
+void timer(int flag);
 
 double savedTime = 0;
 double updateTimer = 0;
@@ -28,10 +29,15 @@ int main(int argc, char *argv[]){
 	glutReshapeFunc(reshape);
 	glutKeyboardFunc(keyFunc);
 	glutSpecialFunc(keySp);
-
+	timer(0);
 	glutMainLoop();
 
 	return 0;
+}
+
+void timer(int flag){
+	glutPostRedisplay();
+	glutTimerFunc(1000/60,timer,0);
 }
 
 void Display(){
